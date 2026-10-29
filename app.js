@@ -1,13 +1,15 @@
 function getDetails () {
-    var name = document.getElementById ("name").value
-    var email = document.getElementById ("email").value
-    var number = document.getElementById ("number").value
-    var massage = document.getElementById ("massage").value
-    console.log(name,email,number,massage);
-    var myCard = document.getElementById ("myCard")
-    var contact = document.getElementById("contact")
+    var name = document.getElementById ("signUp-name").value
+    var email = document.getElementById ("signUp-email").value
+    var password = document.getElementById ("signUp-password").value
 
-    contact.style.display = "none"
+    console.log(name,email,password);
+
+    var myCard = document.getElementById ("myCard");
+    var form = document.getElementById("form");
+
+    form.style.display = "none";
+
     myCard.innerHTML=`<div class="id-card">
     <div class="id-header">
        <img src="https://lms.saylaniit.com/sit-logo-on-dark.png" class="id-logo" alt="logo">
@@ -24,7 +26,7 @@ function getDetails () {
             </div>
             <div class="m-info-group">
               <h4 class="info-label">Phone: </h4>
-              <h4 class="info-value">${number}</h4>
+              <h4 class="info-value">${password}</h4>
             </div>
             <div class="m-info-group">
               <h4 class="info-label">Email: </h4>
@@ -40,6 +42,5 @@ function getDetails () {
     <div class="id-footer">
         www.website.com
     </div>
-</div>`
+</div>`;
 }
-
