@@ -88,3 +88,87 @@ button:hover{
 #chk:checked ~ .signup label{
 	transform: scale(.6);
 }
+
+/* MY CARD */
+
+.id-card {
+    width: 340px;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    border-radius: 20px;
+    
+    padding: 25px;
+    color: #fff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    font-family: 'Jost', sans-serif;
+    margin: 40px auto;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.id-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.badge {
+    background: linear-gradient(90deg, #6d44b8, #0ae0df);
+    padding: 5px 12px;
+    font-size: 0.75em;
+    font-weight: bold;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+
+.avatar-icon {
+    font-size: 1.5em;
+}
+
+.user-title {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #0ae0df;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.info-box {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 0.95em;
+}
+
+.info-row:last-child {
+    margin-bottom: 0;
+}
+
+.label {
+    color: #a4f3f2;
+    font-weight: 500;
+}
+
+.value {
+    color: #ffffff;
+    word-break: break-all;
+}
+
+.id-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.8em;
+    color: #8888aa;
+    letter-spacing: 0.5px;
+}

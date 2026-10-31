@@ -9,38 +9,73 @@ function getDetails () {
     var form = document.getElementById("form");
 
     form.style.display = "none";
+    // myCard.style.display = "block";
 
-    myCard.innerHTML=`<div class="id-card">
+    myCard.innerHTML = `
+<div class="id-card">
     <div class="id-header">
-       <img src="https://lms.saylaniit.com/sit-logo-on-dark.png" class="id-logo" alt="logo">
-       <img class="id-photo" src="https://lms.saylaniit.com/sit-logo-on-dark.png" alt="photo" />
+        <div class="badge">PRO MEMBER</div>
+        <div class="avatar-icon">✨</div>
     </div>
-    <div class="id-details">
-      <h1 class="m-name">Mr. John Doe</h1>
-      <h3 class="m-designation">HOD - Company Name</h3>
-      <div class="m-info">
-          <div>
-            <div class="m-info-group">
-              <h4 class="info-label">Name: </h4>
-              <h4 class="info-value">${name}</h4>
+    
+    <div class="id-body">
+        <h2 class="user-title">${name}</h2>
+        
+        <div class="info-box">
+            <div class="info-row">
+                <span class="label">Email:</span>
+                <span class="value">${email}</span>
             </div>
-            <div class="m-info-group">
-              <h4 class="info-label">Phone: </h4>
-              <h4 class="info-value">${password}</h4>
+            <div class="info-row">
+                <span class="label">Password:</span>
+                <span class="value">${password}</span>
             </div>
-            <div class="m-info-group">
-              <h4 class="info-label">Email: </h4>
-              <h4 class="info-value email">${email}</h4>
-            </div>
-           
-          </div>
-          <div class="m-qrcode">
-            <img src="https://img.magnific.com/free-vector/scan-me-qr-code_78370-9714.jpg?semt=ais_hybrid&w=740&q=80" alt="qr-code">
-          </div>
-      </div>
+        </div>
     </div>
+
     <div class="id-footer">
-        www.website.com
+        <span>Status: Active</span>
+        <span>Secure ID</span>
+    </div>
+</div>`;
+}
+
+
+function logIn () {
+    var logInEmail = document.getElementById ("logIn-email").value
+    var logInPassword = document.getElementById ("logIn-password").value
+
+    console.log(logInEmail,logInPassword);
+
+    var myCard = document.getElementById ("myCard");
+    var form = document.getElementById("form");
+
+    form.style.display = "none";
+    myCard.style.display = "block";
+
+    myCard.innerHTML = `
+<div class="id-card">
+    <div class="id-header">
+        <div class="badge">PRO MEMBER</div>
+        <div class="avatar-icon">✨</div>
+    </div>
+    
+    <div class="id-body">        
+        <div class="info-box">
+            <div class="info-row">
+                <span class="label">Email:</span>
+                <span class="value">${logInEmail}</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Password:</span>
+                <span class="value">${logInPassword}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="id-footer">
+        <span>Status: Active</span>
+        <span>Secure ID</span>
     </div>
 </div>`;
 }
